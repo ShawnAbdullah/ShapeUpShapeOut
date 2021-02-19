@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Up, Shape Out</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header-container">
+        <div class="row col-12 justify-content-center">
+            <h1 class="h1 text-center py-4">Shape-Up or Shape-Out</h1>
+        </div>
+
+    <form action="">
+<input type="number" name="rectangle-width"  placeholder = "width" id="rectangle-width">
+<input type="number" name="rectangle-height"  placeholder = "height" id="rectangle-height">
+<button type="submit" id ="add-rectangle">Add Rectangle</button>
+    </form>
+
+    <form action="">
+        <input type="number" name="square-side"  placeholder = "square side" id="square-side">
+        <button type="submit" id="add-square">Add Square</button>
+            </form>
+
+            <form action="">
+                <input type="number" name="circle-radius"  placeholder = "radius" id="circle-radius">
+                <button type="submit" id="add-circle">Add Circle</button>
+                    </form>
+
+                    <form action="">
+                        <input type="number" name="triangle-height"  placeholder = "height" id="triangle-height">
+                        <button type="submit" id = "add-triangle">Add Triangle</button>
+                            </form>
+
+                            <button id="reset">RESET</button>
+<div id="drawingboard" class="card"></div>
+
+<div id="sidepanel">
+    <div id="shapeInformation" class="card">
+        <!-- Header -->
+        <div class="shape-information-header card-header bg-secondary">Shape</div>
+        <!-- Unordered List -->
+        <ul id="shapeInformationList" class="list-group list-group-flush">
+            <!-- Name -->
+            <li id="nameList" class="list-group-item">
+                <span id="nameLabelSpan" class="shape-information-label ml-3">Name:</span> 
+                <span id="nameValueSpan" class="shape-information-value ml-1"></span>
+            </li>
+            <!-- Height -->
+            <li id="heightList" class="list-group-item">
+                <span id="heightLabelSpan" class="shape-information-label ml-3">Height:</span>
+                <span id="heightValueSpan" class="shape-information-value ml-1"></span>
+            </li>
+            <!-- Width -->
+            <li id="widthListItem" class="list-group-item">
+                <span id="widthLabelSpan" class="shape-information-label ml-3">Width:</span>
+                <span id="widthValueSpan" class="shape-information-value ml-1"></span>
+            </li>
+            <!-- Area -->
+            <li is="areaList" class="list-group-item">
+                <span id="areaLabelSpan" class="shape-information-label ml-3">Area:</span>
+                <span id="areaValueSpan" class="shape-information-value ml-1"></span>
+            </li>
+            <!-- Perimeter -->
+            <li id="perimeterList" class="list-group-item">
+                <span id="perimeterLabelSpan" class="shape-information-label ml-3">Perimeter:</span>
+                <span id="perimeterValueSpan" class="shape-information-value ml-1"></span>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<!-- jQuery-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!--popper-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<!--scripts-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--vanilla javascript-->
+<script src="script.js"></script>
+</body>
+</html>

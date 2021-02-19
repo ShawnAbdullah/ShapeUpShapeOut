@@ -1,0 +1,34 @@
+#drawingboard {
+    position: relative;
+    height: 600px;
+    width: 600px;
+    background-color: lightgray;
+    border: solid black;
+}
+
+#sidepanel {
+    position: relative;
+    height: 600px;
+    width: 250px;
+    border: solid rgb(82, 72, 72);
+}
+
+.shape {
+
+}
+
+.triangle {
+    color: gold;
+}
+
+.circle {
+    color: rebeccapurple;
+}
+
+.rectangle {
+    color: green;
+}
+
+.square {
+    color: rgb(194, 73, 73);
+}
